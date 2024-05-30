@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<pc:portrayalCatalog xmlns:pc="http://www.iho.int/S100PortrayalCatalog/5.2" xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-102" version="2.1.0">
+  <pixmaps/>
+  <colorProfiles>
+      <colorProfile id="1">
+         <description>
+            <name>Color Profile</name>
+            <description>Color profile with day, dusk, and night color palettes</description>
+            <language>eng</language>
+         </description>
+         <fileName>colorProfile.xml</fileName>
+         <fileType>ColorProfile</fileType>
+         <fileFormat>XML</fileFormat>
+      </colorProfile>
+  </colorProfiles>
+  <symbols/>
+  <styleSheets/>
+  <lineStyles/>
+  <areaFills/>
+  <fonts/>
+  <viewingGroups>
+	  <viewingGroup id="13030">
+         <description>
+            <name>depth area (DEPARE), dredged area (DRGARE)</name>
+            <description>Base: H, I - Hydrography</description>
+            <language>eng</language>
+         </description>
+      </viewingGroup>
+  </viewingGroups>
+  <foundationMode>
+	<viewingGroup>13030</viewingGroup>
+  </foundationMode>
+  <viewingGroupLayers>
+      <viewingGroupLayer id="1">
+         <description>
+            <name>Display Base</name>
+            <description>Base Display elements</description>
+            <language>eng</language>
+         </description>
+         <viewingGroup>13030</viewingGroup>
+	 </viewingGroupLayer>
+  </viewingGroupLayers>
+  <displayModes>
+      <displayMode id="1">
+         <description>
+            <name>Display Base</name>
+            <description>Always on display</description>
+            <language>eng</language>
+         </description>
+		 <viewingGroupLayer>1</viewingGroupLayer>
+      </displayMode>
+      <displayMode id="2">
+         <description>
+            <name>Standard Display</name>
+            <description>ECDIS default display</description>
+            <language>eng</language>
+         </description>
+		 <viewingGroupLayer>1</viewingGroupLayer>
+	 </displayMode>
+	 <displayMode id="3">
+         <description>
+            <name>Other Information</name>
+            <description>All other objects in the SENC</description>
+            <language>eng</language>
+         </description>
+         <viewingGroupLayer>1</viewingGroupLayer>
+      </displayMode>
+  </displayModes>
+  <displayPlanes>
+      <displayPlane id="UnderRADAR" order="-1">
+         <description>
+            <name>underRadar</name>
+            <description>Content displayed on underneath of Radar image</description>
+            <language>eng</language>
+         </description>
+      </displayPlane>
+  </displayPlanes>
+  <context>
+      <parameter id="FourShades">
+         <description>
+            <name>Four shades</name>
+            <description>Show depth areas using four colours</description>
+            <language>eng</language>
+         </description>
+         <type>Boolean</type>
+         <default>false</default>
+      </parameter>
+      <parameter id="SafetyContour">
+         <description>
+            <name>SafetyContour</name>
+            <description>selected safety contour (meters)</description>
+            <language>eng</language>
+         </description>
+         <type>Double</type>
+         <default>30</default>
+      </parameter>
+      <parameter id="ShallowContour" enable="//FourShades[1]='true' or //FourShades[1]='1'">
+         <description>
+            <name>Shallow contour</name>
+            <description>Selected shallow water contour</description>
+            <language>eng</language>
+         </description>
+         <type>Double</type>
+         <default>2</default>
+		 <validate>
+			<xpath>//ShallowContour &lt;= //SafetyContour</xpath>
+			<errorMessage>
+				<text>Must be &lt;= safety contour value</text>
+			</errorMessage>
+         </validate>
+      </parameter>
+      <parameter id="DeepContour" enable="//FourShades[1]='true' or //FourShades[1]='1'">
+         <description>
+            <name>Deep contour</name>
+            <description>Selected deep water contour</description>
+            <language>eng</language>
+         </description>
+         <type>Double</type>
+         <default>30</default>
+		 <validate>
+			<xpath>//DeepContour >= //SafetyContour</xpath>
+			<errorMessage>
+				<text>Must be >= safety contour value</text>
+			</errorMessage>
+         </validate>
+      </parameter>
+  </context>
+  <rules>
+	<ruleFile id="1">
+		<description>
+			<name>main</name>
+			<description>main</description>
+			<language>eng</language>
+		</description>
+		<fileName>main.xsl</fileName>
+		<fileType>Rule</fileType>
+		<fileFormat>XSLT</fileFormat>
+		<ruleType>TopLevelTemplate</ruleType>
+	</ruleFile>  
+    <ruleFile id="2">
+      <description>
+        <name>BathymetricSurface_Coverage</name>
+        <description>Bathymetric Surface</description>
+        <language>eng</language>
+      </description>
+      <fileName>BathymetricSurface_Coverage.xsl</fileName>
+      <fileType>Rule</fileType>
+      <fileFormat>XSLT</fileFormat>
+      <ruleType>SubTemplate</ruleType>
+    </ruleFile>
+  </rules>
+</pc:portrayalCatalog>
