@@ -41,7 +41,7 @@
 	 </viewingGroupLayer>
   </viewingGroupLayers>
   <displayModes>
-      <displayMode id="1">
+      <displayMode id="DisplayBase">
          <description>
             <name>Display Base</name>
             <description>Always on display</description>
@@ -49,7 +49,7 @@
          </description>
 		 <viewingGroupLayer>1</viewingGroupLayer>
       </displayMode>
-      <displayMode id="2">
+      <displayMode id="StandardDisplay">
          <description>
             <name>Standard Display</name>
             <description>ECDIS default display</description>
@@ -57,7 +57,7 @@
          </description>
 		 <viewingGroupLayer>1</viewingGroupLayer>
 	 </displayMode>
-	 <displayMode id="3">
+	 <displayMode id="OtherInformation">
          <description>
             <name>Other Information</name>
             <description>All other objects in the SENC</description>
@@ -67,7 +67,7 @@
       </displayMode>
   </displayModes>
   <displayPlanes>
-      <displayPlane id="UnderRADAR" order="-1">
+      <displayPlane id="UnderRadar" order="-1">
          <description>
             <name>underRadar</name>
             <description>Content displayed on underneath of Radar image</description>

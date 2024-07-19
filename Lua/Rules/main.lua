@@ -49,7 +49,7 @@ function PortrayalMain(featureIDs)
 					end
 				end
 
-				local displayPlane = contextParameters.RADAR_OVERLAY and 'DisplayPlane:OverRADAR' or 'DisplayPlane:UnderRADAR'
+				local displayPlane = contextParameters.RADAR_OVERLAY and 'DisplayPlane:OverRadar' or 'DisplayPlane:UnderRadar'
 
 				if vg31030 then
 					featurePortrayal:AddInstructions(displayPlane)

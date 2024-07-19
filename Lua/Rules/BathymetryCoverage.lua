@@ -2,7 +2,7 @@
 
 -- Main entry point for BathymetryCoverage.
 function BathymetryCoverage(feature, featurePortrayal, contextParameters)
-	featurePortrayal:AddInstructions('ViewingGroup:13030;DrawingPriority:3;DisplayPlane:UnderRADAR')
+	featurePortrayal:AddInstructions('ViewingGroup:13030;DrawingPriority:3;DisplayPlane:UnderRadar')
 	
 	featurePortrayal:AddInstructions('CoverageColor:DEPIT,0;LookupEntry:Intertidal,,0,ltSemiInterval')
 	if contextParameters.FourShades then

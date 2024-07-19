@@ -69,7 +69,7 @@ function ProcessTimes(feature, featurePortrayal, contextParameters)
 
 		featurePortrayal:AddInstructions('Parent:main;Hover:true')
 
-		local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRADAR' or 'DisplayPlane:UnderRADAR'
+		local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRadar' or 'DisplayPlane:UnderRadar'
 
 		featurePortrayal:AddInstructions(displayPlane)
 		featurePortrayal:AddInstructions('ViewingGroup:31030;DrawingPriority:24;PointInstruction:CHDATD01')
@@ -105,7 +105,7 @@ function ProcessNauticalInformation(feature, featurePortrayal, contextParameters
 			end
 		end
 
-		local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRADAR' or 'DisplayPlane:UnderRADAR'
+		local displayPlane = contextParameters.RadarOverlay and 'DisplayPlane:OverRadar' or 'DisplayPlane:UnderRadar'
 
 		if vg31030 then
 			featurePortrayal:AddInstructions(displayPlane)

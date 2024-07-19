@@ -5,7 +5,7 @@
 	<xsl:template match="BathymetryCoverage[@primitive='Coverage']" priority="1">
 		<xsl:call-template name="select_bathymetric_coverage">
 			<xsl:with-param name="viewingGroup">13030</xsl:with-param>
-			<xsl:with-param name="displayPlane">UnderRADAR</xsl:with-param>
+			<xsl:with-param name="displayPlane">UnderRadar</xsl:with-param>
 			<xsl:with-param name="drawingPriority">3</xsl:with-param>
 		</xsl:call-template> 
 	</xsl:template>	
