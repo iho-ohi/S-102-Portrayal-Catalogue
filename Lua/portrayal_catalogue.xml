@@ -192,5 +192,16 @@
         <fileFormat>LUA</fileFormat>
         <ruleType>SubTemplate</ruleType>
     </ruleFile>	
+	<ruleFile id="QualityOfBathymetryCoverage">
+		<description>
+            <name>QualityOfBathymetryCoverage</name>
+            <description>Rules for feature type QualityOfBathymetryCoverage</description>
+            <language>eng</language>
+        </description>
+        <fileName>QualityOfBathymetryCoverage.lua</fileName>
+        <fileType>Rule</fileType>
+        <fileFormat>LUA</fileFormat>
+        <ruleType>SubTemplate</ruleType>
+    </ruleFile>	    
   </rules>
 </pc:portrayalCatalog>
