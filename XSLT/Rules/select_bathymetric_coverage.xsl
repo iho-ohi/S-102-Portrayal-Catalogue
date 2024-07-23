@@ -38,7 +38,7 @@
 						<label>BathymetryCoverageDepth1</label>
 						<range>
 							<xsl:attribute name="lower"><xsl:value-of select="$DeepContour"/></xsl:attribute>
-							<xsl:attribute name="closure">gtSemiInterval</xsl:attribute>  
+							<xsl:attribute name="closure">geSemiInterval</xsl:attribute>  
 						</range>
 						<color>
 							<startColor>DEPDW</startColor>
@@ -83,7 +83,7 @@
 						<label>BathymetryCoverageDepth1</label>
 						<range>
 							<xsl:attribute name="lower"><xsl:value-of select="$SafetyContour"/></xsl:attribute>
-							<xsl:attribute name="closure">gtSemiInterval</xsl:attribute>  
+							<xsl:attribute name="closure">geSemiInterval</xsl:attribute>  
 						</range>
 						<color>
 							<startColor>DEPDW</startColor>
@@ -94,7 +94,7 @@
 						<range>
 							<xsl:attribute name="lower">0</xsl:attribute>
 							<xsl:attribute name="upper"><xsl:value-of select="$SafetyContour"/></xsl:attribute>
-							<xsl:attribute name="closure">closedInterval</xsl:attribute>  
+							<xsl:attribute name="closure">geLtInterval</xsl:attribute>  
 						</range>
 						<color>
 							<startColor>DEPVS</startColor>
