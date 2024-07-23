@@ -8,6 +8,7 @@ S-102 GitHub repository for developing and maintaining S-102 Portrayal Catalogue
 [i4]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/4
 [i7]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/7
 [i8]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/8
+[i9]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/9
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
@@ -19,3 +20,4 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#7][i7] Tested FC with updated PC along with matching data from BSH (v3.0.0 data)
 	* [#8][i8] Added NullInstruction rule placeholder for QualityOfBathymetryCoverage
 	* [#8][i8] Rule QualityOfBathymetryCoverage XSLT element tag "NullInstruction" changed to "nullInstruction"
+	* [#9][i9] Remove NauticalInformation processing, S-101 specific
