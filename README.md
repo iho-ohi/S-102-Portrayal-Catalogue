@@ -18,3 +18,4 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#4][i4] Updated PC to match FC v3.0.0
 	* [#7][i7] Tested FC with updated PC along with matching data from BSH (v3.0.0 data)
 	* [#8][i8] Added NullInstruction rule placeholder for QualityOfBathymetryCoverage
+	* [#8][i8] Rule QualityOfBathymetryCoverage XSLT element tag "NullInstruction" changed to "nullInstruction"

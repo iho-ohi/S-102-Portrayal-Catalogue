@@ -6,21 +6,19 @@
     <xsl:param name="displayPlane"/>
     <!--  The display plane  -->
     <xsl:param name="drawingPriority"/>
-	<coverageInstruction>
-		<featureReference>
-			<xsl:value-of select="@id"/>
-		</featureReference>			
-		<viewingGroup>
-			<xsl:value-of select="$viewingGroup"/>
-		</viewingGroup>
-		<displayPlane>
-			<xsl:value-of select="$displayPlane"/>
-		</displayPlane>
-		<drawingPriority>
-			<xsl:value-of select="$drawingPriority"/>
-		</drawingPriority>
-		<NullInstruction>
-		</NullInstruction>	
-	</coverageInstruction>	
+	<nullInstruction>
+         <featureReference>
+            <xsl:value-of select="@id"/>
+          </featureReference>
+          <viewingGroup>
+            <xsl:value-of select="$viewingGroup"/>
+          </viewingGroup>
+          <displayPlane>
+            <xsl:value-of select="$displayPlane"/>
+          </displayPlane>
+          <drawingPriority>
+            <xsl:value-of select="$drawingPriority"/>
+          </drawingPriority>	
+	</nullInstruction>	
   </xsl:template>
 </xsl:transform>
