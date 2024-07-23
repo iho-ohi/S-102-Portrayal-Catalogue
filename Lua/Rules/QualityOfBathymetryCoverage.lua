@@ -2,6 +2,4 @@ function QualityOfBathymetryCoverage(feature, featurePortrayal, contextParameter
 	
 	featurePortrayal:AddInstructions('ViewingGroup:13030;DrawingPriority:3;DisplayPlane:UnderRadar;NullInstruction')
 
-
-	return viewingGroup
 end

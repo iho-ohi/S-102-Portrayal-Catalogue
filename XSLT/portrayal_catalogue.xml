@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<pc:portrayalCatalog xmlns:pc="http://www.iho.int/S100PortrayalCatalog/5.2" xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-102" version="2.1.0">
+<pc:portrayalCatalog xmlns:pc="http://www.iho.int/S100PortrayalCatalog/5.2" xmlns:xsl="http://www.w3.org/2001/XMLSchema" productId="S-102" version="3.0.0-XSLT">
   <pixmaps/>
   <colorProfiles>
       <colorProfile id="1">
@@ -140,14 +140,25 @@
 	</ruleFile>  
     <ruleFile id="2">
       <description>
-        <name>BathymetricSurface_Coverage</name>
+        <name>BathymetryCoverage</name>
         <description>Bathymetric Surface</description>
         <language>eng</language>
       </description>
-      <fileName>BathymetricSurface_Coverage.xsl</fileName>
+      <fileName>BathymetryCoverage.xsl</fileName>
       <fileType>Rule</fileType>
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
+	<ruleFile id="3">
+		<description>
+            <name>QualitySurface Coverage</name>
+            <description>Quality Surface</description>
+            <language>eng</language>
+        </description>
+        <fileName>QualityOfBathymetryCoverage.lua</fileName>
+        <fileType>Rule</fileType>
+        <fileFormat>LUA</fileFormat>
+        <ruleType>SubTemplate</ruleType>
+    </ruleFile>		
   </rules>
 </pc:portrayalCatalog>

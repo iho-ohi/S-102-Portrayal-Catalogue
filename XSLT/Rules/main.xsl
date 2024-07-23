@@ -6,6 +6,8 @@
 	<!--Include templates/rules-->
 	<xsl:include href="BathymetryCoverage.xsl"/> 
 	<xsl:include href="select_bathymetric_coverage.xsl"/> 
+	<xsl:include href="QualityOfBathymetryCoverage.xsl"/> 
+	<xsl:include href="select_quality_coverage.xsl"/> 
 
 	<xsl:param name="DeepContour" select="30.0"/>
 	<xsl:param name="ShallowContour" select="2.0"/>
