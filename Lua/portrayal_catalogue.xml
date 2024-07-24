@@ -15,6 +15,7 @@
       </colorProfile>
   </colorProfiles>
   <symbols/>
+  <styleSheets/>
   <lineStyles/>
   <areaFills/>
   <fonts/>
@@ -172,7 +173,7 @@
       </ruleFile>
 	<ruleFile id="BathymetryCoverage">
 		<description>
-            <name>BathymetryCoverage</name>
+            <name>Bathymetry Coverage</name>
             <description>Rules for feature type BathymetryCoverage</description>
             <language>eng</language>
         </description>
@@ -183,7 +184,7 @@
     </ruleFile>	
 	<ruleFile id="QualityOfBathymetryCoverage">
 		<description>
-            <name>QualityOfBathymetryCoverage</name>
+            <name>Quality of Bathymetry Coverage</name>
             <description>Rules for feature type QualityOfBathymetryCoverage</description>
             <language>eng</language>
         </description>

@@ -130,7 +130,7 @@
 	<ruleFile id="main">
 		<description>
 			<name>main</name>
-			<description>Top level rules</description>
+			<description>Top level rule</description>
 			<language>eng</language>
 		</description>
 		<fileName>main.xsl</fileName>
@@ -141,7 +141,7 @@
     <ruleFile id="BathymetryCoverage">
       <description>
         <name>Bathymetry Coverage</name>
-        <description>Bathymetric Surface</description>
+        <description>Rules for feature type BathymetryCoverage</description>
         <language>eng</language>
       </description>
       <fileName>BathymetryCoverage.xsl</fileName>
@@ -151,13 +151,35 @@
     </ruleFile>
 	<ruleFile id="QualityOfBathymetryCoverage">
 		<description>
-            <name>QualitySurface Coverage</name>
-            <description>Quality Surface</description>
+            <name>Quality of Bathymetry Coverage</name>
+            <description>Rules for feature type QualityOfBathymetryCoverage</description>
             <language>eng</language>
         </description>
-        <fileName>QualityOfBathymetryCoverage.lua</fileName>
+        <fileName>QualityOfBathymetryCoverage.xsl</fileName>
         <fileType>Rule</fileType>
-        <fileFormat>LUA</fileFormat>
+        <fileFormat>XSLT</fileFormat>
+        <ruleType>SubTemplate</ruleType>
+    </ruleFile>		
+	<ruleFile id="selectBathymetricCoverage">
+		<description>
+            <name>Select Bathymetric Coverage</name>
+            <description>Generates portrayal of BathymetryCoverage</description>
+            <language>eng</language>
+        </description>
+        <fileName>select_bathymetric_coverage.xsl</fileName>
+        <fileType>Rule</fileType>
+        <fileFormat>XSLT</fileFormat>
+        <ruleType>SubTemplate</ruleType>
+    </ruleFile>		
+	<ruleFile id="selectQualityCoverage">
+		<description>
+            <name>Select Quality Coverage</name>
+            <description>Generates portrayal of QualityOfBathymetryCoverage</description>
+            <language>eng</language>
+        </description>
+        <fileName>select_quality_coverage.xsl</fileName>
+        <fileType>Rule</fileType>
+        <fileFormat>XSLT</fileFormat>
         <ruleType>SubTemplate</ruleType>
     </ruleFile>		
   </rules>
