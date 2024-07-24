@@ -10,6 +10,7 @@ S-102 GitHub repository for developing and maintaining S-102 Portrayal Catalogue
 [i7]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/7
 [i8]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/8
 [i9]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/9
+[i10]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/10
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
@@ -23,3 +24,4 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#8][i8] Rule QualityOfBathymetryCoverage XSLT element tag "NullInstruction" changed to "nullInstruction"
 	* [#9][i9] Remove NauticalInformation processing, S-101 specific
  	* [#3][i3] Ensure mapping of depths to color values matches ENC
+  	* [#10][i10] Ensure catalogs use expected xmlID values
