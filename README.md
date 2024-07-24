@@ -13,15 +13,17 @@ S-102 GitHub repository for developing and maintaining S-102 Portrayal Catalogue
 [i10]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/10
 [i11]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/11
 [i13]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/13
+[i12]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/12
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
-### 3.0.X - use with FC 3.0.X
+### 3.0.0 - use with FC 3.0.0
 * Misc changes
 	* [#1][i1] Initial version 3.0.0 baseline to S-100 5.2 schemas, can be used with older FC data 2.1.X for testing
   	* [#10][i10] Ensure catalogs use expected xmlID values
   	* [#11][i11] Remove Default.lua
  	* [#13][i13] Correct validation errors
+ 	* [#12][i12] Remove -Lua and -XSLT from version string
 * Rule File / Symbol Updates
 	* [#4][i4] Updated PC to match FC v3.0.0
 	* [#7][i7] Tested FC with updated PC along with matching data from BSH (v3.0.0 data)
