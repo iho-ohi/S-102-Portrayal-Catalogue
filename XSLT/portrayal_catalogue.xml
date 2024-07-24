@@ -70,8 +70,8 @@
   <displayPlanes>
       <displayPlane id="UnderRadar" order="-1">
          <description>
-            <name>underRadar</name>
-            <description>Content displayed on underneath of Radar image</description>
+            <name>Under radar</name>
+            <description>Content displayed underneath Radar image</description>
             <language>eng</language>
          </description>
       </displayPlane>
@@ -88,8 +88,8 @@
       </parameter>
       <parameter id="SafetyContour">
          <description>
-            <name>SafetyContour</name>
-            <description>selected safety contour (meters)</description>
+            <name>Safety contour</name>
+            <description>selected safety contour</description>
             <language>eng</language>
          </description>
          <type>Double</type>
@@ -127,10 +127,10 @@
       </parameter>
   </context>
   <rules>
-	<ruleFile id="1">
+	<ruleFile id="main">
 		<description>
 			<name>main</name>
-			<description>main</description>
+			<description>Top level rules</description>
 			<language>eng</language>
 		</description>
 		<fileName>main.xsl</fileName>
@@ -138,9 +138,9 @@
 		<fileFormat>XSLT</fileFormat>
 		<ruleType>TopLevelTemplate</ruleType>
 	</ruleFile>  
-    <ruleFile id="2">
+    <ruleFile id="BathymetryCoverage">
       <description>
-        <name>BathymetryCoverage</name>
+        <name>Bathymetry Coverage</name>
         <description>Bathymetric Surface</description>
         <language>eng</language>
       </description>
@@ -149,7 +149,7 @@
       <fileFormat>XSLT</fileFormat>
       <ruleType>SubTemplate</ruleType>
     </ruleFile>
-	<ruleFile id="3">
+	<ruleFile id="QualityOfBathymetryCoverage">
 		<description>
             <name>QualitySurface Coverage</name>
             <description>Quality Surface</description>

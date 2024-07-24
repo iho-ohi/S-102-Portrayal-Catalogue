@@ -69,8 +69,8 @@
   <displayPlanes>
       <displayPlane id="UnderRadar" order="-1">
          <description>
-            <name>underRadar</name>
-            <description>Content displayed on underneath of Radar image</description>
+            <name>Under radar</name>
+            <description>Content displayed underneath Radar image</description>
             <language>eng</language>
          </description>
       </displayPlane>
@@ -87,8 +87,8 @@
       </parameter>
       <parameter id="SafetyContour">
          <description>
-            <name>SafetyContour</name>
-            <description>selected safety contour (meters)</description>
+            <name>Safety contour</name>
+            <description>Selected safety contour</description>
             <language>eng</language>
          </description>
          <type>Double</type>
