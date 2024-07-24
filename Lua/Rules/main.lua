@@ -1,7 +1,6 @@
 require 'S100Scripting'
 require 'PortrayalModel'
 require 'PortrayalAPI'
-require 'Default'
 
 -- Main entry point for portrayal
 function PortrayalMain(featureIDs)
@@ -55,12 +54,10 @@ function PortrayalMain(featureIDs)
 		end)
 
 		if not status then
-			Debug.Trace('Error: ' .. err .. '.  Default symbology for ' .. feature.Code .. ' ID=' .. feature.ID .. ' returned.')
+			Debug.Trace('Error: ' .. err .. '. Unexpected feature type ' .. feature.Code .. ' ID=' .. feature.ID .. '. Feature will not be portrayed.')
 
 			-- Clear any drawing instructions created up to this point.
 			featurePortrayal = featurePortrayalItem:NewFeaturePortrayal()
-
-			Default(feature, featurePortrayal, contextParameters)
 		end
 
 		Debug.StopPerformance('Lua Code - Dataset processing')

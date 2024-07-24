@@ -170,17 +170,6 @@
          <fileFormat>LUA</fileFormat>
          <ruleType>SubTemplate</ruleType>
       </ruleFile>
-      <ruleFile id="Default">
-         <description>
-            <name>Default</name>
-            <description>Default portrayal rules</description>
-            <language>eng</language>
-         </description>
-         <fileName>Default.lua</fileName>
-         <fileType>Rule</fileType>
-         <fileFormat>LUA</fileFormat>
-         <ruleType>SubTemplate</ruleType>
-      </ruleFile>
 	<ruleFile id="BathymetryCoverage">
 		<description>
             <name>BathymetryCoverage</name>
