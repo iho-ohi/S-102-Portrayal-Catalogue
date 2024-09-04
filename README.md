@@ -14,6 +14,8 @@ S-102 GitHub repository for developing and maintaining S-102 Portrayal Catalogue
 [i11]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/11
 [i13]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/13
 [i12]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/12
+[i15]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/15
+[i16]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/16
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
@@ -24,6 +26,9 @@ Older changes are here: [Changelog.md](Changelog.md)
   	* [#11][i11] Remove Default.lua
  	* [#13][i13] Correct validation errors
  	* [#12][i12] Remove -Lua and -XSLT from version string
+	* [#15][i15] Description OBE with XSLT removal
+ 	* [#16][i16] Remove XSLT from catalog
+
 * Rule File / Symbol Updates
 	* [#4][i4] Updated PC to match FC v3.0.0
 	* [#7][i7] Tested FC with updated PC along with matching data from BSH (v3.0.0 data)
@@ -31,3 +36,4 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#8][i8] Rule QualityOfBathymetryCoverage XSLT element tag "NullInstruction" changed to "nullInstruction"
 	* [#9][i9] Remove NauticalInformation processing, S-101 specific
  	* [#3][i3] Ensure mapping of depths to color values matches ENC
+
