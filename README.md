@@ -16,6 +16,8 @@ S-102 GitHub repository for developing and maintaining S-102 Portrayal Catalogue
 [i12]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/12
 [i15]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/15
 [i16]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/16
+[i19]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/19
+
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
@@ -28,6 +30,7 @@ Older changes are here: [Changelog.md](Changelog.md)
  	* [#12][i12] Remove -Lua and -XSLT from version string
 	* [#15][i15] Description OBE with XSLT removal
  	* [#16][i16] Remove XSLT from catalog
+	* [#19][i19] Fix description of LITGN token in colorProfile.xml
 
 * Rule File / Symbol Updates
 	* [#4][i4] Updated PC to match FC v3.0.0
