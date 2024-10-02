@@ -17,6 +17,7 @@ S-102 GitHub repository for developing and maintaining the S-102 Portrayal Catal
 [i16]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/16
 [i19]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/19
 [i20]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/20
+[i21]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/21
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
