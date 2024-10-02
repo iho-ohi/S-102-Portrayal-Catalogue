@@ -26,6 +26,7 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#20][i20] Update catalog version identifier to 3.0.1
 
 * Rule File / Symbol Updates
+	* [#21][i21] `BathymetryCoverage` `CoverageFill` must follow `LookupEntry` instructions
 
 ### 3.0.0 - use with FC 3.0.0
 * Misc changes
