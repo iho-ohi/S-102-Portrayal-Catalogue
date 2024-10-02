@@ -1,9 +1,8 @@
 # S-102 Portrayal Catalogue
 <img src=./Images/figure-s102-pc-logo-white.svg alt="signal flags spelling S102" width=496 height=240>
 
-S-102 GitHub repository for developing and maintaining S-102 Portrayal Catalogue
+S-102 GitHub repository for developing and maintaining the S-102 Portrayal Catalogue
 
-# issue tracking format
 [i1]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/1
 [i3]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/3
 [i4]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/4
@@ -17,9 +16,16 @@ S-102 GitHub repository for developing and maintaining S-102 Portrayal Catalogue
 [i15]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/15
 [i16]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/16
 [i19]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/19
+[i20]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/20
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
+
+### 3.0.1 - use with FC 3.0.0
+* Misc changes
+	* [#20][i20] Update catalog version identifier to 3.0.1
+
+* Rule File / Symbol Updates
 
 ### 3.0.0 - use with FC 3.0.0
 * Misc changes
