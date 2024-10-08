@@ -22,13 +22,6 @@ S-102 GitHub repository for developing and maintaining the S-102 Portrayal Catal
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
 
-### 3.0.1 - use with FC 3.0.0
-* Misc changes
-	* [#20][i20] Update catalog version identifier to 3.0.1
-
-* Rule File / Symbol Updates
-	* [#21][i21] `BathymetryCoverage` `CoverageFill` must follow `LookupEntry` instructions
-
 ### 3.0.0 - use with FC 3.0.0
 * Misc changes
 	* [#1][i1] Initial version 3.0.0 baseline to S-100 5.2 schemas, can be used with older FC data 2.1.X for testing
@@ -47,4 +40,5 @@ Older changes are here: [Changelog.md](Changelog.md)
 	* [#8][i8] Rule QualityOfBathymetryCoverage XSLT element tag "NullInstruction" changed to "nullInstruction"
 	* [#9][i9] Remove NauticalInformation processing, S-101 specific
  	* [#3][i3] Ensure mapping of depths to color values matches ENC
+	* [#21][i21] `BathymetryCoverage` `CoverageFill` must follow `LookupEntry` instructions
 
