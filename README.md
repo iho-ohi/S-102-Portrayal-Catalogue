@@ -18,9 +18,15 @@ S-102 GitHub repository for developing and maintaining the S-102 Portrayal Catal
 [i19]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/19
 [i20]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/20
 [i21]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/21
+[i22]: https://github.com/iho-ohi/S-102-Portrayal-Catalogue/issues/22
 
 ## Recent changes
 Older changes are here: [Changelog.md](Changelog.md)
+
+### 3.1.0 - use with FC 3.1.0 (DRAFT)
+* Misc changes
+* Rule File / Symbol Updates
+    * [#22][i22] Type case mismatch in ConvertEncodedValue and PortrayalAPI functions
 
 ### 3.0.0 - use with FC 3.0.0
 * Misc changes

@@ -30,11 +30,28 @@ function PortrayalCreateContextParameter(contextParameterName, parameterType, de
 	CheckType(contextParameterName, 'string')
 	CheckType(parameterType, 'string')
 
-	if parameterType ~= 'boolean' and parameterType ~= 'integer' and parameterType ~= 'real' and parameterType ~= 'text' and parameterType ~= 'date' then
-		error('Invalid parameter type.')
+
+	-- Case insensitive because the docs show leading capitalization but
+	-- ConvertEncodedValue requires lower, as does S100CD.xsd
+	local cpt = string.lower(parameterType)
+
+	-- Allow types to be described per 9-13.3.30 ParameterType despite
+	-- 9a-14.1.3 requiring types to be described per S100_CD_AttributeValueType
+	if cpt == 'double' then
+		cpt = 'real'
+	elseif cpt == 'string' then
+		cpt = 'text'
 	end
 
-	return { Type = 'ContextParameter', Name = contextParameterName, ParameterType = parameterType, DefaultValue = ConvertEncodedValue(parameterType, defaultValue) }
+	if cpt ~= 'boolean' and
+	   cpt ~= 'integer' and
+	   cpt ~= 'real' and
+	   cpt ~= 'text' and
+	   cpt ~= 'date' then
+		error('Invalid parameter type:' .. cpt)
+	end
+
+	return { Type = 'ContextParameter', Name = contextParameterName, ParameterType = cpt, DefaultValue = ConvertEncodedValue(cpt, defaultValue) }
 end
 
 function PortrayalSetContextParameter(contextParameterName, value)
@@ -89,7 +106,7 @@ local function LookupAttributeValue(container, attributeCode, HostGetSimpleAttri
 
 	while rawget(topContainer, 'Parent') do
 		table.insert(attributePath, 1, topContainer.AttributeCode .. ':' .. topContainer.Index)
-			
+
 		topContainer = rawget(topContainer, 'Parent')
 	end
 
@@ -455,7 +472,7 @@ function CreateFeature(featureID, featureCode)
 						pt = PrimitiveType.Surface
 					end
 				end
-				
+
 				t['PrimitiveType'] = pt
 
 				return pt
@@ -476,7 +493,7 @@ function CreateFeature(featureID, featureCode)
 	if feature then
 		return feature
 	end
-	
+
 	feature = { Type = 'Feature', ID = featureID, Code = featureCode, InformationAssociations = {} }
 
 	featureCache[featureID] = feature
@@ -518,7 +535,7 @@ function CreateFeature(featureID, featureCode)
 		CheckTypeOrNil(informationTypeCode, 'string')
 
 		local ias = self:GetInformationAssociations(associationCode, roleCode)
-		
+
 		if #ias ~= 0 then
 			if informationTypeCode then
 				for _, ia in ipairs(ias) do
@@ -677,7 +694,7 @@ function CreateFeature(featureID, featureCode)
 	end
 
 	setmetatable(feature, featureMetatable)
-	
+
 	Debug.StopPerformance('Lua Code - Total')
 
 	return feature
@@ -740,7 +757,7 @@ function CreateSpatialAssociation(spatialType, spatialID, orientation, scaleMini
 					if spatial ~= nilMarker then
 						CheckType(spatial, 'Spatial')
 						spatial['SpatialID'] = t.SpatialID
-				
+
 						t['Spatial'] = spatial
 					else
 						--Debug.Break()
@@ -1032,7 +1049,7 @@ function DecodeDEFString(encodedString)
 end
 
 local function JsonAppend(jsonTable, text)
-	jsonTable[#jsonTable + 1] = text	
+	jsonTable[#jsonTable + 1] = text
 end
 
 local function ConvertToJSONInternal(jsonTable, data)
